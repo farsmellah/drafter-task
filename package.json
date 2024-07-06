@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npm run mock-api",
+    "mock-api": "json-server --port 8000 app/mock-api/notes.json ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "json-server": "^1.0.0-beta.1",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"
