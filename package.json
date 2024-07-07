@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev & npm run mock-api",
-    "mock-api": "json-server --port 8000 app/mock-api/notes.json ",
+    "mock-api": "json-server --port 8000 mock-api/notes.json ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
