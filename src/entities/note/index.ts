@@ -1,3 +1,3 @@
-export { default as Note } from "./note";
+export { default as Note } from "./ui/note";
 
 export type { NoteDTO } from "./model";

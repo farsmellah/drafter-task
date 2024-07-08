@@ -1,1 +1,1 @@
-export { default as NoteList } from "./note-list";
+export { default as NoteList } from "./ui/note-list";

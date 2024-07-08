@@ -7,17 +7,9 @@ export default async function Home() {
   const data = (await getNotesData()) as NoteDTO[];
 
   return (
-    <NoteList>
-      {data.map((note) => (
-        <Note
-          key={note.id}
-          id={note.id}
-          title={note.title}
-          content={note.content}
-          createdAt={note.createdAt}
-          updatedAt={note.updatedAt}
-        />
-      ))}
-    </NoteList>
+    <div className="container text-center d-flex flex-column justify-content-center align-items-center p-4 gap-4">
+      <h1>Notes App</h1>
+      <NoteList notesData={data}></NoteList>
+    </div>
   );
 }

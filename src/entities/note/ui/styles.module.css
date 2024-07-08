@@ -1,0 +1,10 @@
+.cardContainer {
+  height: 100%;
+}
+
+.cardBody {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
