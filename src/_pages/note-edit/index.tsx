@@ -1,1 +1,1 @@
-export { default as NoteEdit } from "./note-edit";
+export { default as NoteEdit } from "./ui/note-edit";

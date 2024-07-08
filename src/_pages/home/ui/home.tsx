@@ -1,6 +1,6 @@
 import { Note } from "@/src/entities";
 import { NoteList } from "@/src/widgets";
-import { getNotesData } from "./api/getNotesData";
+import { getNotesData } from "../api/getNotesData";
 import { NoteDTO } from "@/src/entities/note";
 
 export default async function Home() {
