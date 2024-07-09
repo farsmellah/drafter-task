@@ -9,14 +9,17 @@ export const metadata: Metadata = {
   description: "Web app for notes",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+export default function RootLayout(props: {
+  noteModal: React.ReactNode;
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>{props.children}</div>
+        {props.noteModal}
+        <div id="modal-root" />
+      </body>
     </html>
   );
 }
