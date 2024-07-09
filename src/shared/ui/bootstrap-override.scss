@@ -1,0 +1,14 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+$theme-colors: (
+  "primary": #0c6b58,
+  "secondary": #6c757d,
+  "success": #28a745,
+  "info": #27ab83,
+  "warning": #f7d070,
+  "danger": #d64545,
+  "light": #f0f4f8,
+  "dark": #243b53,
+);
+
+@import "bootstrap/scss/bootstrap.scss";
