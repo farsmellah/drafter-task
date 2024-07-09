@@ -1,15 +1,3 @@
-import { Modal } from "@/src/shared/";
-import { getNoteData, NoteDTO, NoteModal } from "@/src/entities/note";
+import NoteEditModal from "@/src/_pages/note-edit/ui/note-edit-modal";
 
-export default async function NoteEditModal({
-  params,
-}: {
-  params: { noteId: string };
-}) {
-  const data = (await getNoteData(params.noteId)) as NoteDTO;
-  return (
-    <Modal heading="Note Edit">
-      <NoteModal {...data} />
-    </Modal>
-  );
-}
+export default NoteEditModal;

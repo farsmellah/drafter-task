@@ -8,7 +8,7 @@ interface Props {
   createdAt: string;
   updatedAt: string;
 }
-export default function Note({
+export default function NoteCard({
   id,
   title,
   content,

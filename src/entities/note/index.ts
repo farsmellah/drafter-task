@@ -1,6 +1,5 @@
-export { default as Note } from "./ui/note";
-export { default as NoteModal } from "./ui/note-modal-child";
+export { default as Note } from "./ui/note-card";
 
-export type { NoteDTO } from "./model";
+export type { GetNoteDTO, AddNoteDTO, EditNoteDTO } from "./model/types";
 
-export { getNoteData } from "./api/note.api";
+export { getNoteData, addNote, editNote } from "./api/note.api";
