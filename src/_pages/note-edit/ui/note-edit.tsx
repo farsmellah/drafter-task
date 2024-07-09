@@ -1,5 +1,5 @@
 import { NoteDTO } from "@/src/entities/note";
-import { getNoteData } from "@/src/entities/note/api/getNoteData";
+import { getNoteData } from "@/src/entities/note/";
 
 export default async function NoteEdit({
   params,
