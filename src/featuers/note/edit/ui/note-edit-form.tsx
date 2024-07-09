@@ -5,6 +5,7 @@ import { GetNoteDTO } from "@/src/entities/note/model/types";
 import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { NoteEditForm } from "../model/types";
+import { useRouter } from "next/navigation";
 
 interface Props {
   noteData: GetNoteDTO;
@@ -22,8 +23,17 @@ export default function NoteModal({ noteData, handleModalClose }: Props) {
       content: noteData.content,
     },
   });
+  const router = useRouter();
 
   const { title, content, id } = noteData;
+
+  const handleCancel = () => {
+    if (typeof handleModalClose === "function") {
+      handleModalClose();
+    } else {
+      router.push("/");
+    }
+  };
 
   const onSubmit = async (data: NoteEditForm) => {
     await editNote({ ...data, id });
@@ -31,6 +41,8 @@ export default function NoteModal({ noteData, handleModalClose }: Props) {
     console.log(data);
     if (typeof handleModalClose === "function") {
       handleModalClose();
+    } else {
+      router.push("/");
     }
   };
   return (
@@ -62,7 +74,7 @@ export default function NoteModal({ noteData, handleModalClose }: Props) {
           />
         </div>
         <div className="d-flex justify-content-end gap-2">
-          <Button variant="secondary" onClick={handleModalClose}>
+          <Button variant="secondary" onClick={handleCancel}>
             Cancel
           </Button>
           <Button variant="primary" type="submit">
