@@ -1,44 +1,84 @@
 {
   "notes": [
     {
-      "title": "Memento moris",
-      "content": "If ur a pussyzzz",
+      "title": "Carpe Diem",
+      "content": "Seize the day.",
       "id": "1"
     },
     {
-      "title": "The standard Lorem Ipsum passage, used since the 1500s",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Inspirational Quote",
+      "content": "The only way to do great work is to love what you do. - Steve Jobs",
       "id": "2"
     },
     {
-      "title": "Loremmaaaaa",
-      "content": "This is a notes",
+      "title": "Grocery List",
+      "content": "Milk, Eggs, Bread, Butter, Cheese",
       "id": "3"
     },
     {
-      "title": "The standard Lorem Ipsum passage, used since the 1500s",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "title": "Workout Routine",
+      "content": "Monday: Chest, Tuesday: Back, Wednesday: Legs, Thursday: Shoulders, Friday: Arms",
       "id": "4"
     },
     {
-      "title": "Lorem",
-      "content": "This is a note",
+      "title": "Project Ideas",
+      "content": "1. Build a personal website. 2. Create a mobile app. 3. Start a blog.",
       "id": "5"
     },
     {
-      "id": "6",
-      "title": "The standard Lorem Ipsum passage, used since the 1500s",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "title": "Travel Bucket List",
+      "content": "1. Visit Japan. 2. Explore New Zealand. 3. Go on a safari in Africa.",
+      "id": "6"
     },
     {
-      "title": "estimate",
-      "content": "never validate",
-      "id": "o8deEH3"
+      "title": "Meeting Notes",
+      "content": "Discuss Q3 targets. Review marketing strategy. Plan team building activity.",
+      "id": "7"
     },
     {
-      "title": "ALSKdalksdf;alksdnf;lskdjf",
-      "content": "ijdspofjas;dlkjflas;dddddddddda;lskdnf;alskdf;",
-      "id": "dsYbE8-"
+      "title": "Recipe: Pancakes",
+      "content": "Ingredients: Flour, Milk, Eggs, Sugar, Baking powder. Mix and cook on a hot griddle.",
+      "id": "8"
+    },
+    {
+      "title": "Book Recommendations",
+      "content": "1. 'To Kill a Mockingbird' by Harper Lee. 2. '1984' by George Orwell. 3. 'The Great Gatsby' by F. Scott Fitzgerald.",
+      "id": "9"
+    },
+    {
+      "title": "Motivational Quote",
+      "content": "Don't watch the clock; do what it does. Keep going.",
+      "id": "10"
+    },
+    {
+      "title": "Daily Affirmations",
+      "content": "I am strong. I am confident. I am capable of achieving my goals.",
+      "id": "11"
+    },
+    {
+      "title": "Tech To-Do List",
+      "content": "1. Update software. 2. Backup files. 3. Clean up email inbox.",
+      "id": "12"
+    },
+    {
+      "title": "Shopping List",
+      "content": "Shoes, Jacket, T-shirt, Jeans",
+      "id": "13"
+    },
+    {
+      "title": "Favorite Quotes",
+      "content": "1. 'To be, or not to be, that is the question.' - William Shakespeare. 2. 'The only thing we have to fear is fear itself.' - Franklin D. Roosevelt.",
+      "id": "14"
+    },
+    {
+      "title": "Ideas for Blog Posts",
+      "content": "1. Top 10 travel destinations. 2. How to start a business. 3. Tips for healthy living.",
+      "id": "15"
+    },
+    {
+      "title": "Random Thoughts",
+      "content": "I wonder if dogs dream. Why do we yawn? What's the meaning of life? Can we really understand the universe in its entirety? The more we learn, the more questions we seem to have.",
+      "id": "16"
     }
   ]
 }

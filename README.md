@@ -2,7 +2,7 @@
 
 Easily extensible notes test task app, built with Next.js, TypeScript, Bootstrap, React Hook Form, and ESLint.
 
-[Live Demo](https://github.com/farsmellah/drafter-task)
+![Demo screensho](./demo-screenshot.png?raw=true "App demo")
 
 ## Stack
 
