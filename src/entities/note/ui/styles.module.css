@@ -8,3 +8,8 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.editLinkContainer {
+  width: 100%;
+  padding: 1rem;
+}

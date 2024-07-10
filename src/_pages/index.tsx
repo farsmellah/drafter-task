@@ -11,3 +11,4 @@ export { NoteAddModal } from "./note-add";
 
 //NoteView pages
 export { NoteView } from "./note-view";
+export { NoteViewModal } from "./note-view";
