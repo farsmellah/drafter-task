@@ -16,18 +16,34 @@ const revalidateOnAdd = () => {
 };
 
 export type GetNotesParams = {
+  title_like?: string;
   q?: string;
   _sort?: string;
   _order?: string;
 };
 
 export async function getNotesData(params: GetNotesParams) {
-  function constructQueryString(params: GetNotesParams = {}) {
-    const queryString = Object.entries(params)
-      .filter(([key, value]) => value !== undefined)
-      .map(([key, value]) => `${key}=${value}`)
-      .join("&");
-    return queryString === "" ? "" : "?" + queryString;
+  function constructQueryString(params: GetNotesParams) {
+    const queryParams = [];
+    queryParams.push("?");
+
+    if (params.title_like) {
+      queryParams.push(`title_like=^${params.title_like}`);
+    }
+
+    if (params.q) {
+      queryParams.push(`q=${params.q}`);
+    }
+
+    if (params._sort) {
+      queryParams.push(`_sort=${params._sort}`);
+    }
+
+    if (params._order) {
+      queryParams.push(`_order=${params._order}`);
+    }
+
+    return queryParams.join("&");
   }
 
   const res = await fetch(

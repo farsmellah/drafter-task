@@ -8,12 +8,12 @@ export default function SearchBar() {
   const { replace } = useRouter();
   const pathname = usePathname();
 
-  const handleSearch = useDebouncedCallback((search: any) => {
+  const handleSearch = useDebouncedCallback((search: string) => {
     let params = new URLSearchParams(searchParams);
     if (search) {
-      params.set("q", search);
+      params.set("title_like", search);
     } else {
-      params.delete("q");
+      params.delete("title_like");
     }
 
     replace(`${pathname}?${params.toString()}`);
@@ -33,7 +33,7 @@ export default function SearchBar() {
           aria-label="Default"
           aria-describedby="inputGroup-sizing-default"
           onChange={(e) => handleSearch(e.target.value)}
-          defaultValue={searchParams.get("q")?.toString()}
+          defaultValue={searchParams.get("title_like")?.toString()}
         />
       </div>
     </div>
