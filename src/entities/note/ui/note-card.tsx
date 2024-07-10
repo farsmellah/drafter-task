@@ -20,7 +20,7 @@ export default function NoteCard({
       <div className={`card-body ${styles.cardBody} `}>
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{content}</p>
-        <Link href={`/note/${id}/edit`} className="btn btn-primary">
+        <Link href={`/note/${id}/edit`} className="btn btn-dark">
           Edit
         </Link>
       </div>

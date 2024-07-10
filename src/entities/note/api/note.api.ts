@@ -15,10 +15,26 @@ const revalidateOnAdd = () => {
   revalidateTag(`notes`);
 };
 
-export async function getNotesData() {
-  const res = await fetch(process.env.API_URL + "/notes", {
-    next: { tags: ["notes"] },
-  });
+export type GetNotesParams = {
+  q?: string;
+};
+
+export async function getNotesData(params: GetNotesParams) {
+  function constructQueryString(params: GetNotesParams = {}) {
+    const queryString = Object.entries(params)
+      .filter(([key, value]) => value !== undefined)
+      .map(([key, value]) => `${key}=${value}`)
+      .join("&");
+    return queryString === "" ? "" : "?" + queryString;
+  }
+
+  const res = await fetch(
+    process.env.API_URL + "/notes" + constructQueryString(params),
+    {
+      next: { tags: ["notes"] },
+    }
+  );
+
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
