@@ -42,7 +42,7 @@ export default function SortButton() {
 
   useEffect(() => {
     handleSortChange(selectedSort);
-  }, [selectedSort]);
+  }, [selectedSort, handleSortChange]);
 
   return (
     <select
