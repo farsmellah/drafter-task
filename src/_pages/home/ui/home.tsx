@@ -1,6 +1,6 @@
 import { GetNoteDTO } from "@/src/entities";
 import { NoteList } from "@/src/widgets";
-import { getNotesData } from "../api/getNotesData";
+import { getNotesData } from "@/src/entities/";
 export default async function Home() {
   const data = (await getNotesData()) as GetNoteDTO[];
 

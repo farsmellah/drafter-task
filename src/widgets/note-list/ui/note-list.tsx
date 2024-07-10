@@ -1,8 +1,8 @@
-import { Note, NoteDTO } from "@/src/entities/note";
+import { Note, GetNoteDTO } from "@/src/entities/note";
 import Link from "next/link";
 
 export interface Props {
-  notesData: NoteDTO[];
+  notesData: GetNoteDTO[];
 }
 export default function NoteList({ notesData }: Props) {
   return (
