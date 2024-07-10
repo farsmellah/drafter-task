@@ -1,5 +1,4 @@
-import { Note, GetNoteDTO } from "@/src/entities/note";
-import Link from "next/link";
+import { Note, GetNoteDTO } from "@/src/entities";
 
 export interface Props {
   notesData: GetNoteDTO[];

@@ -1,6 +1,6 @@
-import { getNoteData, GetNoteDTO } from "@/src/entities/note";
+import { getNoteData, GetNoteDTO } from "@/src/entities";
 
-import WrapModal from "./wrapper";
+import { Modal } from "@/src/widgets";
 
 export default async function NoteEditModal({
   params,
@@ -9,5 +9,5 @@ export default async function NoteEditModal({
 }) {
   const data = (await getNoteData(params.noteId)) as GetNoteDTO;
 
-  return <WrapModal noteData={data} />;
+  return <Modal noteData={data} heading="Note Edit" />;
 }

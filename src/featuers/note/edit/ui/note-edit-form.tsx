@@ -9,15 +9,9 @@ import { useRouter } from "next/navigation";
 
 interface Props {
   noteData: GetNoteDTO;
-  handleModalClose?: () => void;
 }
-export default function NoteModal({ noteData, handleModalClose }: Props) {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm<NoteEditForm>({
+export default function NoteModal({ noteData }: Props) {
+  const { register, handleSubmit } = useForm<NoteEditForm>({
     defaultValues: {
       title: noteData.title,
       content: noteData.content,
@@ -25,25 +19,15 @@ export default function NoteModal({ noteData, handleModalClose }: Props) {
   });
   const router = useRouter();
 
-  const { title, content, id } = noteData;
+  const { id } = noteData;
 
   const handleCancel = () => {
-    if (typeof handleModalClose === "function") {
-      handleModalClose();
-    } else {
-      router.push("/");
-    }
+    router.back();
   };
 
   const onSubmit = async (data: NoteEditForm) => {
     await editNote({ ...data, id });
-
-    console.log(data);
-    if (typeof handleModalClose === "function") {
-      handleModalClose();
-    } else {
-      router.push("/");
-    }
+    router.back();
   };
   return (
     <>
