@@ -8,9 +8,9 @@ import { NoteEditForm } from "@/src/featuers";
 
 interface ModalProps {
   heading?: string;
-  noteData: GetNoteDTO;
+  children: React.ReactNode;
 }
-export function Modal({ heading, noteData }: ModalProps) {
+export function Modal({ heading, children }: ModalProps) {
   const { back } = useRouter();
 
   return createPortal(
@@ -19,9 +19,7 @@ export function Modal({ heading, noteData }: ModalProps) {
         <BsModal.Header closeButton>
           {heading && <BsModal.Title>{heading}</BsModal.Title>}
         </BsModal.Header>
-        <BsModal.Body>
-          <NoteEditForm noteData={noteData} />
-        </BsModal.Body>
+        <BsModal.Body>{children}</BsModal.Body>
       </BsModal>
     </>,
     document.getElementById("modal-root")!

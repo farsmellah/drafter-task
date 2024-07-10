@@ -5,16 +5,8 @@ interface Props {
   id: string;
   title: string;
   content: string;
-  createdAt: string;
-  updatedAt: string;
 }
-export default function NoteCard({
-  id,
-  title,
-  content,
-  createdAt,
-  updatedAt,
-}: Props) {
+export default function NoteCard({ id, title, content }: Props) {
   return (
     <div className={`card ${styles.cardContainer}`}>
       <div className={`card-body ${styles.cardBody} `}>

@@ -1,6 +1,7 @@
 import { getNoteData, GetNoteDTO } from "@/src/entities";
+import { NoteEditForm } from "@/src/featuers";
 
-import { Modal } from "@/src/widgets";
+import { Modal } from "@/src/shared/";
 
 export default async function NoteEditModal({
   params,
@@ -9,5 +10,9 @@ export default async function NoteEditModal({
 }) {
   const data = (await getNoteData(params.noteId)) as GetNoteDTO;
 
-  return <Modal noteData={data} heading="Note Edit" />;
+  return (
+    <Modal heading="Note Edit">
+      <NoteEditForm noteData={data} />
+    </Modal>
+  );
 }

@@ -1,1 +1,1 @@
-export { NoteEditForm } from "./note";
+export { NoteEditForm, NoteAddForm, NoteAddButton } from "./note";
