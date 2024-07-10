@@ -7,5 +7,10 @@ export default async function NoteEdit({
   params: { noteId: string };
 }) {
   const data = (await getNoteData(params.noteId)) as GetNoteDTO;
-  return <NoteEditForm noteData={data} />;
+
+  return (
+    <div className="container mt-4">
+      <NoteEditForm noteData={data} />
+    </div>
+  );
 }
