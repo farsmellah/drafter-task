@@ -1,8 +1,8 @@
 {
   "notes": [
     {
-      "title": "aLoremasdasasdaaaa",
-      "content": "This is a noteaaaw2ss",
+      "title": "Memento mori",
+      "content": "If ur a pussy",
       "id": "1"
     },
     {
@@ -11,30 +11,24 @@
       "id": "2"
     },
     {
-      "title": "Loremmaaa",
+      "title": "Loremmaaaaa",
       "content": "This is a notes",
       "id": "3"
     },
     {
       "id": "4",
       "title": "The standard Lorem Ipsum passage, used since the 1500s",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "createdAt": "2023-07-02T00:00:00.000Z",
-      "updatedAt": "2023-07-02T00:00:00.000Z"
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
       "id": "5",
       "title": "Lorem",
-      "content": "This is a note",
-      "createdAt": "2023-07-01T00:00:00.000Z",
-      "updatedAt": "2023-07-01T00:00:00.000Z"
+      "content": "This is a note"
     },
     {
       "id": "6",
       "title": "The standard Lorem Ipsum passage, used since the 1500s",
-      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "createdAt": "2023-07-02T00:00:00.000Z",
-      "updatedAt": "2023-07-02T00:00:00.000Z"
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ]
 }

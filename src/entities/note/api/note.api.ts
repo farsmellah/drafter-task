@@ -17,6 +17,8 @@ const revalidateOnAdd = () => {
 
 export type GetNotesParams = {
   q?: string;
+  _sort?: string;
+  _order?: string;
 };
 
 export async function getNotesData(params: GetNotesParams) {

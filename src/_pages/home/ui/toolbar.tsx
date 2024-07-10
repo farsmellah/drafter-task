@@ -1,5 +1,6 @@
-import exp from "constants";
+"use client";
 import SearchBar from "./searchbar";
+import SortButton from "./sort-button";
 
 export default function Toolbar() {
   return (
@@ -16,7 +17,7 @@ export default function Toolbar() {
           </div>
 
           <div className="w-100 mt-3 d-flex justify-content-center justify-content-md-end">
-            <div>Sorting placeholder</div>
+            <SortButton />
           </div>
         </div>
       </div>

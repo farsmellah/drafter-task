@@ -8,9 +8,9 @@ export default async function Home({
 }: {
   searchParams: GetNotesParams;
 }) {
-  const { q } = searchParams;
+  const { q, _sort, _order } = searchParams;
 
-  const data = (await getNotesData({ q })) as GetNoteDTO[];
+  const data = (await getNotesData({ q, _sort, _order })) as GetNoteDTO[];
 
   return (
     <div className="text-center d-flex flex-column justify-content-center align-items-stretch p-4 gap-4">
