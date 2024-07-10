@@ -29,23 +29,23 @@ Easily extensible notes test task app, built with Next.js, TypeScript, Bootstrap
 1. Clone repo:
 
 ```bash
-   git clone https://github.com/farsmellah/drafter-task.git
+git clone https://github.com/farsmellah/drafter-task.git
 ```
 
 2. Navigate to project directory:
 
 ```bash
-   cd drafter-task
+cd drafter-task
 ```
 
 3. Intall dependencies:
 
 ```bash
-   npm install
+npm install
 ```
 
 4. Run
 
 ```bash
-   npm run dev
+npm run dev
 ```
